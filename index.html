@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+320px — 480px: Mobile devices */
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('img/bodybackground.jpg');
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center top;
+  
+}
+.header {
+  overflow: hidden;
+  padding: 30px 10px;  
+  background-image:url('img/headerbackground.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(46, 177, 100);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-center 
+{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blockquote
+{
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#me
+{
+  display: block;
+  margin-left:auto;
+  margin-right: auto; 
+  border-radius: 50%;
+  width: 50%;
+}
+/*  start of media screen 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+end of media screen */
+@media screen and (max-width: 768px)
+{
+  #me
+  {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-center">
+    <p class="lead">Mamy ANDRIAMANDAMINA</p>
+    <p class="lead">OSISoft PI System Administrator & ASP.NET MVC Developer.</p>
+  </div>
+</div>
+<!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a style="padding-left:10px" class="navbar-brand" href="#">About</a>
+    <button class="navbar-toggler" type="button" onclick="myFunction()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span  class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Career summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Biography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education and Diplomas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbarNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<!-- end of navbar section -->
+<div style="padding-left:20px">
+  <div class="row">
+    <div id="leftpage" class="col-3">
+      <img id="me" src="img/Mamy.png">
+    </div>
+    <div id="rightpage" class="col-9">
+      <blockquote class="blockquote text-right">
+        <h2 class="mb-0">About</h2>
+        <br>
+        <p class="mb-0">Having 10 years of experience as OSIsoft PI System Administrator and an ASP.NET MVC Developer.</p>
+        <p class="mb-0">We thank you for your time visiting us.<p>
+        <p class="mb-0">We hope you'll find your interest through this portfolio.</p>
+        <br><footer class="blockquote-footer"> Mamy A. </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+</body>
+</html>
