@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+320px — 480px: Mobile devices */
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background-image: linear-gradient(to right,#183049,#2789ca,#2789ca,#ffffff)
+  /* background-image:url('img/bodybackground.jpg');
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center top; */
+  
+}
+.header {
+  overflow: hidden;
+  padding: 30px 10px;  
+  background-image:url('img/headerbackground.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(46, 177, 100);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-center 
+{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blockquote
+{
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#me
+{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;  
+  width: 100%;
+}
+/*  start of media screen 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+end of media screen */
+</style>
+</head>
+<body class="container">
+
+<div class="header">
+  <div class="header-center">
+    <p class="lead">Mamy ANDRIAMANDAMINA</p>
+    <p class="lead">OSISoft PI System Administrator & ASP.NET MVC Developer.</p>
+  </div>
+</div>
+<!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a style="padding-left:10px" class="navbar-brand" href="index.html">About</a>
+    <button class="navbar-toggler" type="button" onclick="myFunction()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Philosophy.html">Philosophy statement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Biography.html">Biography</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Degrees.html">Degrees and Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbarNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<!-- end of navbar section -->
+
+<div class="row">
+  <h4 class="text-center">UNIVERSITY BACKGROUND</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Université du Havre <a style="color:whitesmoke" href="https://www.univ-lehavre.fr/">https://www.univ-lehavre.fr/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Master Degree in Electrical and Automation.</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2005 - 2006</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/Master.png"></div>
+</div>
+<br>
+<div class="row">
+  <h4 class="text-center">OSISOFT PI SYSTEM</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">OSIsoft <a style="color:whitesmoke" href="https://www.osisoft.com/">https://www.osisoft.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">PI System Administration for IT Professional</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2013</div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/admin.png"></div>
+</div>
+<br>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">OSIsoft <a style="color:whitesmoke" href="https://www.osisoft.com/">https://www.osisoft.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">PI System Basics.</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2021</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/basics.jpg"></div>
+</div>
+<br>
+<div class="row">
+  <h4 class="text-center">WEB APPLICATION DEVELOPMENT</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Global Knowledge <a style="color:whitesmoke" href="https://www.globalknowledge.com/">https://www.globalknowledge.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Developing ASP.NET Core MVC Web Applications</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2020</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/mvc.png"></div>
+</div>
+<br>
+<div class="row">
+  <h4 class="text-center">ARTIFICIAL INTELLIGENCE</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Udacity <a style="color:whitesmoke" href="https://www.udacity.com/">https://www.udacity.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">AI Programming with Python.</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2021</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/ai_python.png"></div>
+</div>
+<br>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Udacity <a style="color:whitesmoke" href="https://www.udacity.com/">https://www.udacity.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">AWS Machine Learning Foundations</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2021</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/aws.png"></div>
+</div>
+<br>
+<div class="row">
+  <h4 class="text-center">LANGUAGE</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">American Embassy <a style="color:whitesmoke" href="https://mg.usembassy.gov/fr/">https://mg.usembassy.gov/fr/</a></div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Advanced 1 Certificate Level in English</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2004</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-9"><img id="me" src="img/english.png"></div>
+</div>
+</body>
+</html>

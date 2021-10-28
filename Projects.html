@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+320px — 480px: Mobile devices */
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background-image: linear-gradient(to right,#430f61,#ffffff)
+  /* background-image:url('img/bodybackground.jpg');
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center top; */
+  
+}
+.header {
+  overflow: hidden;
+  padding: 30px 10px;  
+  background-image:url('img/headerbackground.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(46, 177, 100);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-center 
+{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blockquote
+{
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#me
+{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;  
+  width: 100%;
+}
+/*  start of media screen 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+end of media screen */
+.text-left .title
+{
+  background-color: #f48024;
+  color: #1d1d1e;
+  border-radius: 10px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 5px 0 5px;
+}
+</style>
+</head>
+<body class="container">
+<div class="header">
+  <div class="header-center">
+    <p class="lead">Mamy ANDRIAMANDAMINA</p>
+    <p class="lead">OSISoft PI System Administrator & ASP.NET MVC Developer.</p>
+  </div>
+</div>
+<!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a style="padding-left:10px" class="navbar-brand" href="index.html">About</a>
+    <button class="navbar-toggler" type="button" onclick="myFunction()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Philosophy.html">Philosophy statement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Biography.html">Biography</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Degrees.html">Degrees and Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbarNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<!-- end of navbar section -->
+<h4 class="text-center">Process-Downtime-Web-Interface-using-OSISoft-PI-WebAPI</h4>
+<br>
+<div class="row">  
+  <div class="col-6">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight:lighter;">This repository contains the complete .Net Core MVC Web application that we can use to deploy immediately on IIS or any Web hosting service. This web interface allows user to view and interact with the plant downtime. Users can attach additional information that will help the understanding of the root cause of process downtime. This web Application runs using .Net Core MVC Framework fed from OSISoft PI Web API. For a better rendering of this interface, we strongly recommend users to use Google Chrome as web browser. Thanks, Mamy :)</div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center"><img id="me" style="width: 10%" src="img/github.png"></div>
+    <div class="text-center"><a href="https://github.com/MamyAndriamandamina/Process-Downtime-Web-Interface-using-OSISoft-PI-WebAPI">https://github.com/MamyAndriamandamina/Process-Downtime-Web-Interface-using-OSISoft-PI-WebAPI</a></div>
+  </div>
+  </div>
+  <br>
+  <h4 class="text-center">SMS-Notification-using-OSISoft-PI-SDK</h4>
+<br>
+<div class="row">  
+  <div class="col-6">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight:lighter;">This repository contains all program we need to manage Process Plant SMS notification. Assuming your are running OSISoft PI System to capture your process tags data. Managing SMS Notification under SQL Server is definetely the best practice to manage your SMS (managing PI tags, managing users and group of users, view activity status...). Finally, having at least one Modem Hardware that can support AT Command is mandatory in order to send your notification. Having all said, This repository is a startup for you to create your SMS Notification.</div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center"><img id="me" style="width: 10%" src="img/github.png"></div>
+    <div class="text-center"><a href="https://github.com/MamyAndriamandamina/SMS-Notification-using-OSISoft-PI-SDK">https://github.com/MamyAndriamandamina/SMS-Notification-using-OSISoft-PI-SDK</a></div>
+  </div>
+  </div>
+  <br>
+  <h4 class="text-center">Process-Alarm-And-Events-using-OSISoft-PI-AF-SDK</h4>
+<br>
+<div class="row">  
+  <div class="col-6">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight:lighter;">This repository aims to provide the complete package for running any Industrial Alarm and Events Reporting using OSISoft PI-AF SDK and Microsoft SQL Server. If the implementation is successuful, then this repository should return an email notification to 2 different group of users on a daily baisis for all different plant areas. The email notification will contain the top 10 highest alarm and events occurence for each plant areas. The output is an email notification with a subject, a title, a time frame reporting, some statistical tables under HTML format as e-mail body.</div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center"><img id="me" style="width: 10%" src="img/github.png"></div>
+    <div class="text-center"><a href="https://github.com/MamyAndriamandamina/Process-Alarm-And-Events-using-OSISoft-PI-AF-SDK">https://github.com/MamyAndriamandamina/Process-Alarm-And-Events-using-OSISoft-PI-AF-SDK</a></div>
+  </div>
+  </div>
+  <br>
+  <h4 class="text-center">AI-Programming-with-Python</h4>
+<br>
+<div class="row">  
+  <div class="col-6">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight:lighter;">This repository maintains project files that i have used during training session as final project submission regarding the AI Programming with Python Nanodegree program.</div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center"><img id="me" style="width: 10%" src="img/github.png"></div>
+    <div class="text-center"><a href="https://github.com/MamyAndriamandamina/AI-Programming-with-Python">https://github.com/MamyAndriamandamina/AI-Programming-with-Python</a></div>
+  </div>
+  </div>
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+320px — 480px: Mobile devices */
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right,#dde6e9);
+  /* background-image:url('img/bodybackground.jpg');
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center top; */
+  
+}
+.header {
+  overflow: hidden;
+  padding: 30px 10px;  
+  background-image:url('img/headerbackground.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(46, 177, 100);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-center 
+{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blockquote
+{
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#me
+{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;  
+  width: 100%;
+}
+/*  start of media screen 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+end of media screen */
+.text-left .title
+{
+  background-color: #f48024;
+  color: #1d1d1e;
+  border-radius: 10px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 5px 0 5px;
+}
+</style>
+</head>
+<body class="container">
+<div class="header">
+  <div class="header-center">
+    <p class="lead">Mamy ANDRIAMANDAMINA</p>
+    <p class="lead">OSISoft PI System Administrator & ASP.NET MVC Developer.</p>
+  </div>
+</div>
+<!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a style="padding-left:10px" class="navbar-brand" href="index.html">About</a>
+    <button class="navbar-toggler" type="button" onclick="myFunction()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Philosophy.html">Philosophy statement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Biography.html">Biography</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Degrees.html">Degrees and Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbarNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<!-- end of navbar section -->
+<div class="row">
+        <br>
+        <div class="text-center"><h3 class="font-weight-bold">Mamy R. ANDRIAMANDAMINA</h3></div>
+        <div class="text-center">lebonpal@gmail.com - mamivola@yahoo.fr</div>
+        <div class="text-center">Build 1032 Square 21/74 Tanambao Verrerie - Tamatave - Madagascar</div>
+        <div class="text-center">https://mamyrand.github.io</div>
+        <div class="text-center">https://github.com/MamyAndriamandamina/</div>
+        <div class="text-center">(+261) 32 37 803 23 - (+261) 32 07 268 50 </div>
+        <div class="text-center">
+          <h4 class="font-weight-bold">OSISoft PI System Administrator & ASP.Net MVC Developer.</h4>
+        </div>
+        <hr/>
+</div>
+<div class="row">
+    <div class="text-center">
+        <div class="text-divider">PI System Supervisor <span>&#8226;</span> PI System Administrator </div>
+        <div class="text-divider">Turn-Over Engineer <span>&#8226;</span> Quality Controller Engineer <span>&#8226;</span> Lecturer</div>
+    </div>
+</div>
+<br>
+<div class="row">
+   <h4 class="text-center">WORK EXPERIENCE.</h4>
+</div>
+<br>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Dynatec Madagascar S.A <a href="https://ambatovy.com/ang/">https://ambatovy.com/ang/</a></div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title" >PI System Supervisor for the Ambatovy project.</div></div>
+    <br>
+    <p>- Increased nickel and cobalt production by 20% from original engineering design after implementing downtime web interface using ASP.Net MVC and OSIsoft PI web API.</p>
+    <p>- Increased process engineers visibility and knowledge by 95% after implementing a system reporting for process alarm and events using .Net Framework, OSIsoft PI AF-SDK and SQL Server Reporting.</p>
+    <p>- Enhanced users visibility and access on plant information by 40% after converting OSIsoft PI process book packages to OSIsoft PI vision packages.</p>
+    <p>- Increased PI system availability by 99.9% after implementing PI AF system health monitoring.</p>
+    <p>- Increased asset maintenance service quality by 75% after implementing asset health monitoring and notification using PI AF system.(Electrical, Instrumentation, DCS, and Mechanical)</p>
+    <p>- Lift up users knowledge on PI analytics by having provided regular training session to them and that covers at least 75% of their daily task requirement.</p>
+    <p>- Increased OSISoft PI system administrator team member Knowledge from regular training session and that covers at least 75% of the daily task requirement.</p>
+  </div>
+  <div class="col-6">
+    <div class="text-center">Mar 2021 - present</div>
+    
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Dynatec Madagascar S.A <a href="https://ambatovy.com/ang/">https://ambatovy.com/ang/</a></div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">PI System Administrator for the Ambatovy project.</div></div>
+    <br>
+    <p>- Enhanced Process Engineers visibility and access on Plant information by 90% after implementing DCS (Distributed Control System) and LIMS (Laboratoray Information System) tags in PI.</p>
+    <p>- Enhanced Metallurgical Accounting Reporting Quality by 40% compared to the traditional Excel-based Reporting.</p>
+    <p>- Increased PI System availability to 99.9% by having implemented robust and redundancy OPC Interfaces, enabling buffering services that will keep data on PI nodes from PI Server unavailability and buffer data from PI Server availability.</p>
+  </div>
+  <div class="col-6">
+    <div class="text-center">Apr 2012 - Mar 2021</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">SNC Lavalin Inc.  <a href="https://www.snclavalin.com/">https://www.snclavalin.com/</a></div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Turn-Over Engineer for the Ambatovy project.</div></div>
+    <br>
+    <p>- Prepared Turn-over Package from SNC-Lavalin (EPCM Contract) to Owner's Group (OG) regarding all Instrumentation and Electrical Discipline that covers 40% of the whole Nickel and Cobalt Extration Project.</p>
+  </div>
+  <div class="col-6">
+    <div class="text-center">2010 - 2012</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">SNC Lavalin Inc.  <a href="https://www.snclavalin.com/">https://www.snclavalin.com/</a></div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Quality Control Engineer for the Ambatovy project.</div></div>
+    <br>
+    <p>- Oversaw 20% of the whole Ore Slurry Pipeline installation in regard of Quality Control on Mechanical and Civil Discipline.</p>
+  </div>
+  <div class="col-6">
+    <div class="text-center">2008 - 2010</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Institut Supérieur Polytechnique de Madagascar. <a href="http://ispm-edu.com/">http://ispm-edu.com/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Lecturer.</div></div>
+    <br>
+    <p>- Provided up to 50% of Automation Theory to students in 3rd year preparing the license degree in Electronic, Information Technology and Artificial intelligence.</p>
+  </div>
+  <div class="col-6">
+    <div class="text-center">2007 - 2008</div>
+  </div>
+</div>
+<div class="row">
+  <h4 class="text-center">EDUCATION BACKGROUND.</h4>
+</div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: bold;">Université du Havre <a href="https://www.univ-lehavre.fr/">https://www.univ-lehavre.fr/</a> </div>
+    <div class="text-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-weight: lighter;"><div class="title">Master Degree in Electrical and Automation.</div></div>
+    <br>    
+  </div>
+  <div class="col-6">
+    <div class="text-center">2005 - 2006</div>
+  </div>
+</div>
+</body>
+</html>
