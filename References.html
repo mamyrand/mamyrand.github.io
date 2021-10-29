@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+320px — 480px: Mobile devices */
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background-image: linear-gradient(to right,#136a8a,#267871)
+  /* background-image:url('img/bodybackground.jpg');
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center top; */
+  
+}
+.table
+{
+  text-align: center;
+  color: whitesmoke;
+}
+.header {
+  overflow: hidden;
+  padding: 30px 10px;  
+  background-image:url('img/headerbackground.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(46, 177, 100);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-center 
+{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blockquote
+{
+  color:whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#me
+{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;  
+  width: 100%;
+}
+/*  start of media screen 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+end of media screen */
+.text-left .title
+{
+  background-color: #f48024;
+  color: #1d1d1e;
+  border-radius: 10px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 5px 0 5px;
+}
+</style>
+</head>
+<body class="container">
+<div class="header">
+  <div class="header-center">
+    <p class="lead">Mamy ANDRIAMANDAMINA</p>
+    <p class="lead">OSISoft PI System Administrator & ASP.NET MVC Developer.</p>
+  </div>
+</div>
+<!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a style="padding-left:10px" class="navbar-brand" href="index.html">About</a>
+    <button class="navbar-toggler" type="button" onclick="myFunction()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Philosophy.html">Philosophy statement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Biography.html">Biography</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Degrees.html">Degrees and Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="References.html">References</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbarNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+<!-- end of navbar section -->
+<br>
+<h4 class="text-center">References.</h4>
+<br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Professional Relationship</th>
+      <th scope="col">Current Title</th>
+      <th scope="col">Last date of cooperation</th>
+      <th scope="col">Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Shyam Sankarankutty</td>
+      <td>DCS Superintendent (Supervisor)</td>
+      <td>DCS Superintendent</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.facebook.com/shyam.sankarankutty">https://www.facebook.com/shyam.sankarankutty</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Rajo Ali Velo Ramarokoto</td>
+      <td>Workmate</td>
+      <td>Distributed Control System Engineer</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/ramarokoto-rajo-ali-velo-02033388/">https://www.linkedin.com/in/ramarokoto-rajo-ali-velo-02033388/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Hajaniaina Andrianavalona</td>
+      <td>Team member</td>
+      <td>PI System Administrator</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/hajaniaina-andrianavalona-7a4a71188/">https://www.linkedin.com/in/hajaniaina-andrianavalona-7a4a71188/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Vony Miarisoa Randrianarivony</td>
+      <td>OSISoft PI System Super User.</td>
+      <td>Superintendent, IT Business Partners</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/vony-miarisoa-randrianarivony-36874262/">https://www.linkedin.com/in/vony-miarisoa-randrianarivony-36874262/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Kenny Indrianony</td>
+      <td>Infrastructure for the PI System.</td>
+      <td>Superintendent, IT Operations, IT Infrastructure</td>
+      <td>2021</td>
+    <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/kenny-indrianony-b577a377/">https://www.linkedin.com/in/kenny-indrianony-b577a377/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Herizo Razafimahefa</td>
+      <td>Workmate</td>
+      <td>LIMS & Database Specialist</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/herizo-razafimahefa/">https://www.linkedin.com/in/herizo-razafimahefa/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Huziel Masiiwa</td>
+      <td>PI User</td>
+      <td>Technical Superintendent at Ambatovy.</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/huziel-masiiwa-2b500310/">https://www.linkedin.com/in/huziel-masiiwa-2b500310/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Manolo Mbolatsiaro Ratsimbazafy</td>
+      <td>PI User</td>
+      <td>Lean Six Sigma Black Belt at Ambatovy.</td>
+      <td>2021</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/manolo-ratsimba/">https://www.linkedin.com/in/manolo-ratsimba/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Herby Reysenbach</td>
+      <td>DCS Superintendent (Supervisor)</td>
+      <td>Unknown</td>
+      <td>2020</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/herby-reysenbach-b68a6b16b/">https://www.linkedin.com/in/herby-reysenbach-b68a6b16b/</a></td>
+    </tr>  
+    <tr>
+      <th scope="row">10</th>
+      <td>Silvia Skillen</td>
+      <td>Senior Process Controls Engineer (Supervisor)</td>
+      <td>Senior Process Controls Engineer</td>
+      <td>2015</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/silvia-skillen-3964487a/">https://www.linkedin.com/in/silvia-skillen-3964487a/</a></td>
+      <td></td>
+    </tr>   
+    <tr>
+      <th scope="row">11</th>
+      <td>Isabelle Plante</td>
+      <td>Turn Over Lead Engineer</td>
+      <td>Global Director Commissioning at Hatch</td>
+      <td>2011</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/isabelle-plante-0255793a/">https://www.linkedin.com/in/isabelle-plante-0255793a/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Tidiane Diabate</td>
+      <td>Turn Over Lead Engineer</td>
+      <td>Project Manager at OPAL-RT TECHNOLOGIES</td>
+      <td>2011</td>
+      <td><a style="color:whitesmoke" href="https://www.linkedin.com/in/tidiane-diabate/">https://www.linkedin.com/in/tidiane-diabate/</a></td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>Julien Amédée Raboanary</td>
+      <td>Director</td>
+      <td>Director and Owner of ISPM</td>
+      <td>2007</td>
+      <td><a style="color:whitesmoke" href="http://ispm-edu.com/index.php">http://ispm-edu.com/index.php</a></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
